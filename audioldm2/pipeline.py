@@ -132,7 +132,7 @@ def round_up_duration(duration):
 #     torch.save({"state_dict": new_state_dict}, os.path.join(CACHE_DIR, "clap.pth"))
 
 
-def build_model(ckpt_path=None, config=None, device=None, model_name="audioldm2-full"):
+def build_model(ckpt_path=None, config=None, device=None, model_name="audioldm_48k"):
 
     if device is None or device == "auto":
         if torch.cuda.is_available():
