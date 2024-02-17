@@ -145,7 +145,7 @@ def build_model(ckpt_path=None, config=None, device=None, model_name="audioldm2-
     print("Loading AudioLDM-2: %s" % model_name)
     print("Loading model on %s" % device)
 
-    ckpt_path = download_checkpoint(model_name)
+    # ckpt_path = download_checkpoint(model_name)
 
     if config is not None:
         assert type(config) is str
